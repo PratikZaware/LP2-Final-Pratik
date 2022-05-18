@@ -1,0 +1,30 @@
+<apex:page controller="studenttest" >
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+            	<apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Name"></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                	<apex:inputText value="{!name}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                	<apex:outputLabel value="Roll No"></apex:outputLabel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                	<apex:inputText value="{!rollno}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                          <apex:pageBlockTable value="{!students}" var="st">
+                             <apex:column ><apex:facet name="header">Name</apex:facet>{!st.name}</apex:column>
+                             <apex:column ><apex:facet name="header">Roll No</apex:facet>{!st.rollno}</apex:column>
+                      </apex:pageBlockTable>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!addStudent}" value="Add Student"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

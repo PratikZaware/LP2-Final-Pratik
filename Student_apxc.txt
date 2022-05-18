@@ -1,0 +1,27 @@
+public class studenttest {
+    public String name {get;set;}
+    public String rollno {get;set;}
+    public List<student> students {get; set;}
+    
+        
+    public studenttest(){
+        students = new List<student>();
+    }
+    
+    public class student {
+        public String name {get; set;}
+        public String rollno {get; set;}
+        
+        public student(String n, String r){
+            name = n;
+            rollno = r;
+        }
+    }
+    
+    public void addStudent(){
+        student stud = new student(name,rollno);
+        students.add(stud);
+        name = '';
+        rollno = '';
+    }
+}

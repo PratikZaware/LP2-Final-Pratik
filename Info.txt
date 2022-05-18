@@ -1,0 +1,9 @@
+Salesforce:- PratikZaware@2001.com    Pass@123
+
+Github:- PratikZaware
+
+Theory:- https://docs.google.com/document/d/1TcLJ7FsJdPl9zXMemQ03zlXSH4A7pH1d-uEIhRV86NM/edit?usp=sharing
+
+KVM Ubuntu:- https://phoenixnap.com/kb/ubuntu-install-kvm
+
+KVM Fedora:- https://computingforgeeks.com/how-to-install-kvm-on-fedora/
